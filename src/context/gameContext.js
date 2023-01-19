@@ -1,10 +1,21 @@
-import { createContext, useContext } from 'react'
+import { createContext, useContext, useState } from 'react'
 
 const GameContext = createContext()
 
 const GameContextProvider = ({ children }) => {
   // TODO: Create board state
-  return <GameContext.Provider value={{}}>{children}</GameContext.Provider>
+  const [board, setBoard] = useState([
+    ['', '', '', '', '', ''],
+    ['', '', '', '', '', ''],
+    ['', '', '', '', '', ''],
+    ['', '', '', '', '', ''],
+    ['', '', '', '', '', ''],
+  ])
+  return (
+    <GameContext.Provider value={{ board, setBoard }}>
+      {children}
+    </GameContext.Provider>
+  )
 }
 
 const useGame = () => {
