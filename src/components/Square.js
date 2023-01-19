@@ -1,3 +1,4 @@
 export default function Square({ trope }) {
-  return <div>{trope}</div>
+  return <div class="square">
+    <p className="trope-text">{trope}</p></div>
 }
