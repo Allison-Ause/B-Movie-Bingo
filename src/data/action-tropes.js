@@ -29,4 +29,5 @@ export const actionTropes = [
   'dragged',
   'helicopter dangle',
   'suspended from the force',
+  'shooting from the hip',
 ]
