@@ -1,3 +1,3 @@
-export default function Square() {
-  return <div>{words}</div>
+export default function Square({ trope }) {
+  return <div>{trope}</div>
 }
