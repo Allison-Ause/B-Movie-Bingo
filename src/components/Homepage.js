@@ -13,7 +13,6 @@ export default function Homepage() {
       ) : (
         <Selector setPlaying={setPlaying} setGenre={setGenre} genre={genre} />
       )}
-      <p>Text will be here!</p>
     </div>
   )
 }
