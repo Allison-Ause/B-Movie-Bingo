@@ -3,7 +3,8 @@ import { createContext, useContext } from 'react'
 const GameContext = createContext()
 
 const GameContextProvider = ({ children }) => {
-  return <GameContext.Provider>{children}</GameContext.Provider>
+  // TODO: Create board state
+  return <GameContext.Provider value={{}}>{children}</GameContext.Provider>
 }
 
 const useGame = () => {
