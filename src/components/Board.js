@@ -3,11 +3,10 @@ import { actionTropes } from '../data/action-tropes'
 import Square from './Square'
 
 export default function Board() {
-  console.log('actionTropes:', actionTropes)
   return (
-    <div>
-      <p>Board Display Here</p>
-      <div>
+    <div class="homepage">
+      <h1>Board Display Here</h1>
+      <div className="board">
         {shuffleTropes(actionTropes).map((trope, i) => {
           return <Square key={i} trope={trope} />
         })}
