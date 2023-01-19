@@ -1,11 +1,15 @@
-export default function Selector({ setPlaying, setGenre, genre }) {
+import { useGame } from '../context/gameContext'
+
+export default function Selector() {
+  const { setPlaying, setGenre } = useGame()
+
   const handleSelection = (e) => {
     setGenre(e.target.value)
   }
   const handleClick = () => {
     setPlaying(true)
   }
-  console.log('genre:', genre)
+
   return (
     <div>
       <p>Select a Genre</p>

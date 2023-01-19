@@ -3,7 +3,9 @@ import { createContext, useContext, useState } from 'react'
 const GameContext = createContext()
 
 const GameContextProvider = ({ children }) => {
-  // TODO: Create board state
+  const [playing, setPlaying] = useState(false)
+  const [genre, setGenre] = useState('')
+
   const [board, setBoard] = useState([
     ['', '', '', '', '', ''],
     ['', '', '', '', '', ''],
@@ -11,8 +13,11 @@ const GameContextProvider = ({ children }) => {
     ['', '', '', '', '', ''],
     ['', '', '', '', '', ''],
   ])
+  // TODO: win condition logic (option to cancel?)
   return (
-    <GameContext.Provider value={{ board, setBoard }}>
+    <GameContext.Provider
+      value={{ board, setBoard, playing, setPlaying, genre, setGenre }}
+    >
       {children}
     </GameContext.Provider>
   )
