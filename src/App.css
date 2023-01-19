@@ -30,12 +30,24 @@
 
 .trope-text {
   padding: 15px;
-  color: rgb(26, 2, 2);
   font-size: 1.25rem;
   font-weight: bold;
 }
 
 .dobbed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  height: 190px;
+  width: 190px;
+  text-align: center;
+  overflow: hidden;
   background-color: rgb(94, 5, 5);
   color: whitesmoke;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
