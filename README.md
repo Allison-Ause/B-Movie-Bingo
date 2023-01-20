@@ -4,9 +4,10 @@ Gather with friends or play alone. This app lets you select the genre of movie y
 
 Current TODO LIST:
 
-[] Create board state in useGame
-[] Set board state to shuffled data
-[] Figure out how to hand specific data based on selected genre
+[x] Create board state in useGame
+[x] Set board state to shuffled data
+[x] Figure out how to hand specific data based on selected genre
+[x] Toggle dobbed or not dobbed with supported styling
 [] Win conditions check in useGame
 [] Dope animation effect for win (based on genre?!)
 // GIFS FROM MOVIES? OLD SCHOOL 8BIT WINNER LOGO

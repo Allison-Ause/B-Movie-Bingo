@@ -16,6 +16,12 @@
   margin: 20px;
 }
 
+#board-button-box {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
 .square {
   display: flex;
   align-items: center;
