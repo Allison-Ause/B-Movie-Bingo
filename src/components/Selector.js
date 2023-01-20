@@ -27,7 +27,6 @@ export default function Selector() {
         throw new Error('Must select genre to proceed.')
     }
   }
-  console.log('board:', board)
 
   return (
     <div>

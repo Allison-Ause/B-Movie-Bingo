@@ -4,7 +4,7 @@ import { useGame } from '../context/gameContext'
 export default function Board() {
   const { board } = useGame()
   return (
-    <div class="homepage">
+    <div className="homepage">
       <h1>Board Display Here</h1>
       <div className="board">
         {board.map((inner) =>
