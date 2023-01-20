@@ -14,13 +14,13 @@ export default function Selector() {
   const handleClick = () => {
     setPlaying(true)
     switch (genre) {
-      case 'action':
-        setBoard(shuffleTropes(actionTropes))
-        break
-      case 'horror':
+      case 'Horror':
         setBoard(shuffleTropes(horrorTropes))
         break
-      case 'sci-fi':
+      case 'Action':
+        setBoard(shuffleTropes(actionTropes))
+        break
+      case 'Sci-Fi':
         setBoard(shuffleTropes(scifiTropes))
         break
       default:
@@ -32,9 +32,9 @@ export default function Selector() {
     <div>
       <p>Select a Genre</p>
       <select onChange={handleSelection}>
-        <option value={'horror'}>Horror</option>
-        <option value={'action'}>Action</option>
-        <option value={'sci-fi'}>Sci-Fi</option>
+        <option value={'Horror'}>Horror</option>
+        <option value={'Action'}>Action</option>
+        <option value={'Sci-Fi'}>Sci-Fi</option>
       </select>
       <button onClick={handleClick}>Create Board</button>
     </div>
