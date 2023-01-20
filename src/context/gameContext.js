@@ -4,15 +4,9 @@ const GameContext = createContext()
 
 const GameContextProvider = ({ children }) => {
   const [playing, setPlaying] = useState(false)
-  const [genre, setGenre] = useState('')
+  const [genre, setGenre] = useState('horror')
 
-  const [board, setBoard] = useState([
-    ['', '', '', '', '', ''],
-    ['', '', '', '', '', ''],
-    ['', '', '', '', '', ''],
-    ['', '', '', '', '', ''],
-    ['', '', '', '', '', ''],
-  ])
+  const [board, setBoard] = useState([])
   // TODO: win condition logic (option to cancel?)
   return (
     <GameContext.Provider
