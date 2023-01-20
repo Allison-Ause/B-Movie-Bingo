@@ -5,10 +5,14 @@ import { scifiTropes } from '../data/sci-fi-tropes'
 import { shuffleTropes } from '../utils/general-utils'
 
 export default function Selector() {
-  const { setPlaying, genre, setGenre, setBoard } = useGame()
+  const { setPlaying, genre, setGenre, board, setBoard } = useGame()
 
   const handleSelection = (e) => {
     setGenre(e.target.value)
+  }
+
+  const handleClick = () => {
+    setPlaying(true)
     switch (genre) {
       case 'action':
         setBoard(shuffleTropes(actionTropes))
@@ -22,11 +26,8 @@ export default function Selector() {
       default:
         throw new Error('Must select genre to proceed.')
     }
-    setBoard(shuffleTropes())
   }
-  const handleClick = () => {
-    setPlaying(true)
-  }
+  console.log('board:', board)
 
   return (
     <div>
