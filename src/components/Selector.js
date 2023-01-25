@@ -9,6 +9,7 @@ export default function Selector() {
 
   const handleSelection = (e) => {
     setGenre(e.target.value)
+    console.log('changed genre')
   }
 
   const handleClick = () => {
