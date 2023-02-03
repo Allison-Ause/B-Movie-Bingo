@@ -6,9 +6,11 @@ import { actionTropes } from '../data/action-tropes'
 import { scifiTropes } from '../data/sci-fi-tropes'
 
 export default function Board() {
-  const { board, setBoard, genre, playing, setPlaying } = useGame()
+  const { board, setBoard, genre, setGenre, playing, setPlaying } = useGame()
 
   const handleChangeGenre = () => {
+    // changing setter here to address stale genre state
+    setGenre('Horror')
     setPlaying(false)
   }
 

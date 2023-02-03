@@ -5,7 +5,7 @@ import { scifiTropes } from '../data/sci-fi-tropes'
 import { shuffleTropes } from '../utils/general-utils'
 
 export default function Selector() {
-  const { setPlaying, genre, setGenre, board, setBoard } = useGame()
+  const { setPlaying, genre, setGenre, setBoard } = useGame()
 
   const handleSelection = (e) => {
     setGenre(e.target.value)
