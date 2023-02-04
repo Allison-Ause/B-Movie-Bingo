@@ -8,7 +8,7 @@ Current TODO LIST:
 [x] Set board state to shuffled data
 [x] Figure out how to hand specific data based on selected genre
 [x] Toggle dobbed or not dobbed with supported styling
-[] Fix bug with stale state
+[x] Fix bug with stale state in genre
 [] Place switch case setBoard in a utils function for easy reuse
 [] Win conditions check in useGame
 [] Dope animation effect for win (based on genre?!)

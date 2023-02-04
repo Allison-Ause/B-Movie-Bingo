@@ -27,7 +27,6 @@ export default function Board() {
         throw new Error('Must select genre to proceed.')
     }
   }
-  console.log('genre:', genre)
 
   return (
     <>
