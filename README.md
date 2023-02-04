@@ -9,9 +9,14 @@ Current TODO LIST:
 [x] Figure out how to hand specific data based on selected genre
 [x] Toggle dobbed or not dobbed with supported styling
 [x] Fix bug with stale state in genre
+[] Fix styling for squares so the margins make a better grid
 [] Place switch case setBoard in a utils function for easy reuse
 [] Win conditions check in useGame
 [] Dope animation effect for win (based on genre?!)
 // GIFS FROM MOVIES? OLD SCHOOL 8BIT WINNER LOGO
 // use z-index
-[] Board reset button and functionality for reshuffling board state
+[x] Board reset button and functionality for reshuffling board state
+[] Build header
+[] Enable mobile styling
+[] About page
+[] Rules page
